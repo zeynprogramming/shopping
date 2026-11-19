@@ -1,0 +1,11 @@
+[build]
+  # The app lives in a subdirectory of the repository.
+  base = "shuka_marketplace"
+  # Static frontend (index.html + app.js), relative to the base directory.
+  publish = "public"
+
+# Client-side routing (history.pushState): serve the SPA shell for unknown paths.
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
